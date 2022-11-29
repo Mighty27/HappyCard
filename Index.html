@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="atas" id="atas">
-      <img onclick="mulai()" src="https://i.postimg.cc/25Jn526q/sticker-Ultah.png" alt="" />
+      <img onclick="mulai()" src="IMG1.jpg" alt="" />
       <h2>Scroll kebawah ya</h2>
     </div>
 
@@ -73,6 +73,6 @@
       var musik = "";
 
     </script>
-    <script> AOS.init({ once: true, }); </script> <script> var audio = document.querySelector(".audio"); if(musik) {audio.src = musik;} function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); } function wa(isi) { window.open("https://api.whatsapp.com/send?phone=62895362550003&text=Mau+Tanya+babi&_fb_noscript=1 Makasih ya udah inget ulang tahun aku, di hari spesial ini aku pengin " + isi); } async function tanya() { var { value: kado } = await swal.fire({ title: "Di hari spesial ini kamu pengin nya apa?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado); } else { await swal.fire("Jangan dikosongin dong"); tanya(); } } </script>
+    <script> AOS.init({ once: true, }); </script> <script> var audio = document.querySelector(".audio"); if(musik) {audio.src = musik;} function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); } function wa(isi) { window.open("https://api.whatsapp.com/send?phone=6282278779714&text=" +isi+ "%20,semoga dihari ultahmu kau merasa bahagia dan jangan bersedih untuk apapun 😁 (Mighty27_)"); } async function tanya() { var { value: kado } = await swal.fire({ title: "Di hari spesial ini kamu pengin nya apa?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("Sekarang Kirim Keinginanmu Yg barusan kau buat Ke Nomor WA mu sendiri"); wa(kado); } else { await swal.fire("Jangan dikosongin dong"); tanya(); } } </script>
   </body>
 </html>
